@@ -862,7 +862,7 @@ class Camera
     recordingVideo = false;
     try {
       closeRenderer();
-      captureSession.abortCaptures();
+      // captureSession.abortCaptures();
       mediaRecorder.stop();
     } catch (CameraAccessException | IllegalStateException e) {
       // Ignore exceptions and try to continue (changes are camera session already aborted capture).
